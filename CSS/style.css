@@ -108,6 +108,14 @@ header{
 	transition: all 0.4s ease;
 }
 
+
+.navbar .hire-btn::after{
+	content: '';
+	padding: 0;
+	letter-spacing: 0;
+	font-size: 12px;
+}
+
 .navbar li a:hover::after{
 	width: 100%;
 	color: #D40271;
@@ -402,7 +410,6 @@ header.sticky{
 	background: #17202A;
 	padding: 50px 30px;
 	border-radius: 10px;
-	border: 2px solid #D40271;
 	cursor: pointer;
 	transition: all .3s;
 }
@@ -432,7 +439,7 @@ header.sticky{
 }
 
 .row:hover{
-	
+	border: 2px solid #D40271;
     transform: scale(1.1);
 }
 /*--------------------------------------End Services section----------------------------------------*/
@@ -462,31 +469,29 @@ header.sticky{
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
-	padding: 5%;
+	padding: 10%;
 }
 
 .col{
 	width: 100%;
-  margin: 0 10%;
-  position: relative;
-  padding: 5% 0;
+    margin: 0 10%;
+    position: relative;
+    padding: 5% 0;
 }
 
 .skill{
 	width: 80%;
 	list-style: none;
 	padding-top: 10%;
+	border-radius: 15px;
 }
 
 .skill li{
 	margin-bottom:40px; 
 	background:#030303; 
-	height:12px; 
-	border-radius:5px; 
-	border-left:1px solid #111; 
-	border-top:1px solid #111; 
-	border-right:1px solid #333; 
-	border-bottom:1px solid #333; 
+	height:20px; 
+	border-radius: 10px; 
+	border:1px solid #333; 
 }
 
 .skill li .em{
@@ -503,7 +508,6 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#CB06F7;
   right: -80%;
 }
 .skill li .em-css{
@@ -511,7 +515,6 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#6A05C4;
   right: -70%;
   bottom: 25px;
 }
@@ -520,7 +523,6 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#0438F7;
   right: -48%;
   bottom: 25px;
 }
@@ -529,7 +531,6 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#0A910A;
   right: -45%;
   bottom: 25px;
 }
@@ -538,7 +539,6 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#F1F80B;
   right: -30%;
   bottom: 25px;
 }
@@ -547,7 +547,6 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#F8820B;
   right: -14%;
   bottom: 25px;
 }
@@ -556,14 +555,13 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  color:#FA2803;
   right: -10%;
   bottom: 25px;
 }
 
 
 .skillbar{
-	height: 3px; 
+	height: 10px; 
 	margin: 2px 0; 
 	position: absolute;
 	margin-top: 3px;
@@ -577,59 +575,52 @@ header.sticky{
 
 #html{ 
 	width:70%;  
-	background-color: #CB06F7;
+	background-color: #D40271;
 	animation:html 1s ease-out;   
 	border-radius: 3px;   
-	box-shadow: 0px 0px 10px 1px rgba(203, 6, 247); 
 }
 
 #css{ 
 	width:60%;  
-	background-color: #6A05C4;
+	background-color: #D40271;
 	animation:html 2s ease-out; 
-	border-radius: 3px;  
-	box-shadow: 0px 0px 10px 1px rgba(106, 5, 196);      
+	border-radius: 3px;       
 }
 
 #javascript{ 
 	width:50%;  
-	background-color: #0438F7;
+	background-color: #D40271;
 	animation:javascript 3s ease-out; 
-	border-radius: 3px;   
-	box-shadow: 0px 0px 10px 1px rgba(4, 56, 247);     
+	border-radius: 3px;       
 }
 
 #php{ 
 	width:40%;  
-	background-color: #0A910A;
+	background-color: #D40271;
 	animation:php 4s ease-out;  
-	border-radius: 3px;   
-	box-shadow: 0px 0px 10px 1px rgba(10, 145, 10);    
+	border-radius: 3px;      
 }
 
 #jquary{ 
 	width:30%;  
-	background-color: #F1F80B;
+	background-color: #D40271;
 	animation:jquary 5s ease-out; 
-	border-radius: 3px;  
-	box-shadow: 0px 0px 10px 1px rgba(241, 248, 11);      
+	border-radius: 3px;       
 }
 
 #python{
 	width:20%;  
-	background-color: #F8820B;
+	background-color: #D40271;
 	animation:python 5s ease-out; 
 	border-radius: 3px;  
-	box-shadow: 0px 0px 10px 1px rgba(248, 130, 11); 
 }
 
 
 #c{
 	width:10%;  
-	background-color: #FA2803;
+	background-color: #D40271;
 	animation:c 5s ease-out; 
 	border-radius: 3px;  
-	box-shadow: 0px 0px 10px 1px rgba(250, 40, 3); 
 }
 
 
@@ -770,14 +761,33 @@ header.sticky{
     transition: 0.8s ease;
 }
 
+.portfolio-part .img-box .live a{
+	background-color: #fff;
+	color: #D40271;
+	width: 300px;
+	text-align: center;
+	text-decoration: none;
+	padding: 10px;
+	font-weight: bolder;
+    position: absolute;
+	bottom: 0;
+	opacity: 0;
+	transition: 0.8s ease;
+}
+
 .portfolio-part .img-box:hover{
 	transform: scale(1.1);
 }
 
 .portfolio-part .img-box:hover .description{
 	opacity: 1;
-  height: 100%;
-  border-radius: 5px;
+    height: 100%;
+    border-radius: 5px;
+}
+
+
+.portfolio-part .img-box:hover .live a{
+	opacity: 1;
 }
 
 
@@ -873,6 +883,8 @@ header.sticky{
 		padding: 80px 4%;
 		transition: .2s;
 	}
+
+
 }
 
 @media (max-width: 990px){
@@ -920,6 +932,10 @@ header.sticky{
 
 	.navbar.active{
 		top: 100%;
+	}
+
+	.hire-btn{
+		padding: 0 12px;
 	}
 
 	.body-section img{
