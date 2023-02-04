@@ -21,6 +21,11 @@ body{
 	transition: all 1s ease;
 }
 
+.fixed-icon img{
+	width: 50px;
+	border-radius: 50px;
+}
+
 .fixed-icon a{
 	color: #fff;	
 }
@@ -79,6 +84,10 @@ header{
 	text-decoration: none;
 }
 
+header .logo span{
+	color: #dedede;
+}
+
 .navbar{
 	display: flex;
 }
@@ -92,6 +101,7 @@ header{
 	position: relative;
 	color: #fff;
 	padding: 10px 20px;
+	font-size: 13px;
 	text-decoration: none;
 	overflow: hidden;
 	transition: 0.5s;
@@ -332,6 +342,10 @@ header.sticky{
 	margin-bottom: 5px;
 }
 
+.about-info h2 span{
+	color: #D40271;
+}
+
 .about-info h5{
 	font-size: 28px;
 	margin-bottom: 25px;
@@ -382,7 +396,80 @@ header.sticky{
 
 /*--------------------------------------End About section----------------------------------------*/
 
+
+/*--------------------------------------Start Education Part------------------------------------*/
+
+.edu-info{
+    text-align: center;
+	margin-bottom: 100px;
+}
+
+.edu-info h2{
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+.edu-info h2 span{
+	color: #D40271;
+}
+
+.edu-info p{
+	color: grey;
+	letter-spacing: 1px;
+	line-height: 25px;
+}
+
+
+
+ 
+.education-part #education{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #D40271;
+}
+
+#education .details h2{
+    color: #D5D8DC;
+}
+
+
+#education .details{
+	color: #808B96;
+	padding: 10px;
+}
+
+.education-part img{
+	width: 150px;
+	border-radius: 50%;
+}
+
+.ssc{
+    background-color: #17202A;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+.hsc{
+    background-color: #17202A;
+	border-top-right-radius: 30px;
+	border-bottom-left-radius: 30px;
+}
+
+.bsc{
+    background-color: #17202A;
+	border-top-left-radius: 30px;
+	border-bottom-right-radius: 30px;
+}
+
+/*--------------------------------------End Education Part--------------------------------------*/
+
 /*--------------------------------------Start Services section----------------------------------------*/
+.services{
+	background-color: #17202A;
+}
 .service-info{
     text-align: center;
 }
@@ -390,6 +477,10 @@ header.sticky{
 .service-info h2{
 	font-size: 40px;
 	margin-bottom: 5px;
+}
+
+.service-info h2 span{
+	color: #D40271;
 }
 
 .service-info p{
@@ -407,7 +498,7 @@ header.sticky{
 }
 
 .row{
-	background: #17202A;
+	background: #000;
 	padding: 50px 30px;
 	border-radius: 10px;
 	cursor: pointer;
@@ -447,7 +538,7 @@ header.sticky{
 /*----------------------------------------Start skills section----------------------------------------*/
 
 .skills{
-	background: #17202A;
+	background: #000;
 }
 
 .skills-info{
@@ -459,6 +550,10 @@ header.sticky{
 	margin-bottom: 5px;
 }
 
+.skills-info h2 span{
+	color: #D40271;
+}
+
 .skills-info p{
 	color: grey;
 	letter-spacing: 1px;
@@ -467,20 +562,19 @@ header.sticky{
 
 .container{
 	width: 100%;
-	margin: 0 auto;
 	overflow: hidden;
-	padding: 10%;
+	
 }
 
 .col{
 	width: 100%;
-    margin: 0 10%;
+    
     position: relative;
     padding: 5% 0;
 }
 
 .skill{
-	width: 80%;
+	width: 100%;
 	list-style: none;
 	padding-top: 10%;
 	border-radius: 15px;
@@ -488,9 +582,9 @@ header.sticky{
 
 .skill li{
 	margin-bottom:40px; 
-	background:#030303; 
+	background: #17202A; 
 	height:20px; 
-	border-radius: 10px; 
+	border-radius: 20px; 
 	border:1px solid #333; 
 }
 
@@ -508,14 +602,14 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  right: -80%;
+  right: -90%;
 }
 .skill li .em-css{
   position:relative; 
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  right: -70%;
+  right: -82%;
   bottom: 25px;
 }
 .skill li .em-js{
@@ -531,7 +625,7 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  right: -45%;
+  right: -36%;
   bottom: 25px;
 }
 .skill li .em-jquary{
@@ -539,7 +633,7 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  right: -30%;
+  right: -70%;
   bottom: 25px;
 }
 .skill li .em-python{
@@ -547,7 +641,7 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  right: -14%;
+  right: -43%;
   bottom: 25px;
 }
 .skill li .em-c{
@@ -555,7 +649,7 @@ header.sticky{
   font-style: normal;
   font-size: 14px;
   text-align: right;
-  right: -10%;
+  right: -7%;
   bottom: 25px;
 }
 
@@ -564,7 +658,7 @@ header.sticky{
 	height: 10px; 
 	margin: 2px 0; 
 	position: absolute;
-	margin-top: 3px;
+	margin-top: 5px;
 }
 
 
@@ -574,21 +668,21 @@ header.sticky{
 }
 
 #html{ 
-	width:70%;  
+	width:95%;  
 	background-color: #D40271;
 	animation:html 1s ease-out;   
 	border-radius: 3px;   
 }
 
 #css{ 
-	width:60%;  
+	width:86%;  
 	background-color: #D40271;
 	animation:html 2s ease-out; 
 	border-radius: 3px;       
 }
 
 #javascript{ 
-	width:50%;  
+	width:58%;  
 	background-color: #D40271;
 	animation:javascript 3s ease-out; 
 	border-radius: 3px;       
@@ -602,14 +696,14 @@ header.sticky{
 }
 
 #jquary{ 
-	width:30%;  
+	width:75%;  
 	background-color: #D40271;
 	animation:jquary 5s ease-out; 
 	border-radius: 3px;       
 }
 
 #python{
-	width:20%;  
+	width:50%;  
 	background-color: #D40271;
 	animation:python 5s ease-out; 
 	border-radius: 3px;  
@@ -694,7 +788,7 @@ header.sticky{
 
 /*--------------------------------------Start Portfolio section----------------------------------------*/
  .portfolio{
- 	background: #000;
+ 	background: #17202A;
  }
 
  .portfolio-info{
@@ -704,6 +798,10 @@ header.sticky{
 .portfolio-info h2{
 	font-size: 40px;
 	margin-bottom: 5px;
+}
+
+.portfolio-info h2 span{
+	color: #D40271;
 }
 
 .portfolio-info p{
@@ -793,6 +891,123 @@ header.sticky{
 
 /*--------------------------------------End Portfolio section----------------------------------------*/
 
+/*--------------------------------------Start Blog section------------------------------------------*/
+.blog{
+ 	background: #000;
+ }
+
+ .blogs-info{
+    text-align: center;
+}
+
+.blogs-info h2{
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+.blogs-info h2 span{
+	color: #D40271;
+}
+
+.blogs-info p{
+	color: grey;
+	letter-spacing: 1px;
+	line-height: 25px;
+	margin-bottom: 25px;
+}
+.container-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	max-width: 1200px;
+	margin-block: 2rem;
+	gap: 2rem;
+  }
+  
+  .container-box img {
+	max-width: 100%;
+	display: block;
+	object-fit: cover;
+	transition: 0.3s;
+  }
+
+  .container-box img:hover{
+	transform: scale(1.2);
+  }
+  
+  .card {
+	display: flex;
+	flex-direction: column;
+	width: 30%;
+	overflow: hidden;
+	box-shadow: 0 .1rem 1rem rgba(0, 0, 0, 0.1);
+	border-radius: 1em;
+	background: #333;
+	background: linear-gradient(to right, #17202A, #17202A);
+  
+  }
+  
+  
+  
+  .card-body {
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: .5rem;
+  }
+  
+  
+  .tag {
+	align-self: flex-start;
+	padding: .25em .75em;
+	border-radius: 1em;
+	font-size: .75rem;
+  }
+  
+  .tag + .tag {
+	margin-left: .5em;
+  }
+  
+  .tag-silver{
+	background-color: #A7A7A7;
+	color: #fafafa;
+  }
+  
+  .tag-black{
+	background-color: black;
+	color: #fafafa;
+  }
+  
+  .tag-red {
+	background-color: #E4520E;
+	color: #fafafa;
+  }
+  
+  .card-body h4 {
+	font-size: 1.5rem;
+	text-transform: capitalize;
+  }
+  
+  .card-footer {
+	display: flex;
+	padding: 1rem;
+	margin-top: auto;
+  }
+  
+  .user {
+	display: flex;
+	gap: .5rem;
+  }
+  
+  .user-image {
+	border-radius: 50%;
+  }
+  
+  .user-info{
+	color: #666;
+  }
+/*--------------------------------------End Blog section--------------------------------------------*/
+
 
 /*--------------------------------------Start Contact section----------------------------------------*/
 
@@ -818,6 +1033,10 @@ header.sticky{
 	font-size: 40px;
 	margin-bottom: 5px;
 	text-align: center;
+}
+
+.contact-info h2 span{
+    color: #D40271;
 }
 
 .contact-info form{
@@ -957,6 +1176,10 @@ header.sticky{
 		height: auto;
 	}
 
+	.education-part #education{
+		display: block;
+	}
+
 	.container{
 		width: 100%;
 		margin: 0;
@@ -969,6 +1192,14 @@ header.sticky{
 
 	.skill{
 		width: 450px;
+	}
+
+	.container-box{
+		display: block;
+	}
+
+	.card{
+		width: 100%;
 	}
 
 	.contact{
